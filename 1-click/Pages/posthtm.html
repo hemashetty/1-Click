@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> hope work</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+
+                $.get("postses.aspx", function (data, status) {
+                    alert("Data: " + data + "\nStatus: " + status);
+                    //$('#hell').val(data);
+                    var dat = data;
+                    var arr = dat.split("\n");
+                    $("#data").html("<span>" + arr[0] + "</span></br>" + arr[1] + "/" + arr[2]);
+                    var name = arr[0];
+                    $('#hell').val(name);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <button>Send an HTTP GET request to a page and get the result back</button>
+    <input type="text" id="hell" name="hell" />
+</body>
+</html>

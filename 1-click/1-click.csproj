@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52EE5F2A-E690-4A33-8C89-6077FBB90300}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_1_click</RootNamespace>
+    <AssemblyName>1-click</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.5.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Ajax\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Recaptcha">
+      <HintPath>..\..\captcha\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\coin-slider.css" />
+    <Content Include="css\default.css" />
+    <Content Include="css\fonts.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\fontawesome-social-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Images\24301.png" />
+    <Content Include="Images\25cd5ff3-b699-436b-ad0b-71f485972b49.jpg" />
+    <Content Include="Images\amazon_.png" />
+    <Content Include="Images\biscoot.jpg" />
+    <Content Include="Images\bookmyshow.jpg" />
+    <Content Include="Images\bookmyshow_.jpg" />
+    <Content Include="Images\CIRCLE_logo_mail-300x225.jpg" />
+    <Content Include="Images\content_bg.gif" />
+    <Content Include="Images\dot.gif" />
+    <Content Include="Images\ebay-128.png" />
+    <Content Include="Images\email-14-512.jpg" />
+    <Content Include="Images\facebook-round_318-26615.jpg" />
+    <Content Include="Images\flip.png" />
+    <Content Include="Images\gal1.jpg" />
+    <Content Include="Images\gal2.jpg" />
+    <Content Include="Images\gal3.jpg" />
+    <Content Include="Images\gal4.jpg" />
+    <Content Include="Images\gal5.jpg" />
+    <Content Include="Images\gal6.jpg" />
+    <Content Include="Images\ganna.png" />
+    <Content Include="Images\gmail_.png" />
+    <Content Include="Images\gplus-icon.png" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Images\img1.jpg" />
+    <Content Include="Images\img2.jpg" />
+    <Content Include="Images\jetairway.png" />
+    <Content Include="Images\jetairway_.png" />
+    <Content Include="Images\join-icon.png" />
+    <Content Include="Images\li.gif" />
+    <Content Include="Images\linkedin_circle_black-256.png" />
+    <Content Include="Images\main_bg.gif" />
+    <Content Include="Images\makemytrip.png" />
+    <Content Include="Images\makemytrip_.png" />
+    <Content Include="Images\myntra.png" />
+    <Content Include="Images\outlook_.jpg" />
+    <Content Include="Images\outlook_img.jpg" />
+    <Content Include="Images\overlay.png" />
+    <Content Include="Images\pic01.jpg" />
+    <Content Include="Images\pic02.jpg" />
+    <Content Include="Images\Picture2.jpg" />
+    <Content Include="Images\pinterest-logo-circle_318-40721.png" />
+    <Content Include="Images\radio_icon_660px.png" />
+    <Content Include="Images\readmore.gif" />
+    <Content Include="Images\saavan.png" />
+    <Content Include="Images\search.gif" />
+    <Content Include="Images\search_bg.gif" />
+    <Content Include="Images\shope.jpg" />
+    <Content Include="Images\slide1.jpg" />
+    <Content Include="Images\slide2.jpg" />
+    <Content Include="Images\slide3.jpg" />
+    <Content Include="Images\slide_a.png" />
+    <Content Include="Images\slide_p.png" />
+    <Content Include="Images\social.jpg" />
+    <Content Include="Images\spacer.gif" />
+    <Content Include="Images\submit.gif" />
+    <Content Include="Images\ta-mark.png" />
+    <Content Include="Images\travel.jpg" />
+    <Content Include="Images\tumblr_circle_black-256.png" />
+    <Content Include="Images\twitter_circle_black-512.png" />
+    <Content Include="Images\userpic.gif" />
+    <Content Include="Images\yatra_-.png" />
+    <Content Include="Images\yatra_.png" />
+    <Content Include="Images\youtube.jpg" />
+    <Content Include="js\coin-slider.min.js" />
+    <Content Include="js\cufon-georgia.js" />
+    <Content Include="js\cufon-yui.js" />
+    <Content Include="js\droid_sans_400-droid_sans_700.font.js" />
+    <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\script.js" />
+    <Content Include="Pages\Admin_detail.aspx" />
+    <Content Include="Pages\Admin_email.aspx" />
+    <Content Include="Pages\Admin_login.aspx" />
+    <Content Include="Pages\Admin_logout.aspx" />
+    <Content Include="Pages\Admin_setting.aspx" />
+    <Content Include="Pages\contact_us.aspx" />
+    <Content Include="Pages\get_entertainment.aspx" />
+    <Content Include="Pages\get_shopping.aspx" />
+    <Content Include="Pages\get_social.aspx" />
+    <Content Include="Pages\get_socialnetwork.aspx" />
+    <Content Include="Pages\get_travelling.aspx" />
+    <Content Include="Pages\help.aspx" />
+    <Content Include="Pages\History.aspx" />
+    <Content Include="Pages\Home.aspx" />
+    <Content Include="Pages\Logout.aspx" />
+    <Content Include="Pages\set_entertainment.aspx" />
+    <Content Include="Pages\set_shopping.aspx" />
+    <Content Include="Pages\set_social.aspx" />
+    <Content Include="Pages\set_socialnetwork.aspx" />
+    <Content Include="Pages\set_travelling.aspx" />
+    <Content Include="Pages\Site1.Master" />
+    <Content Include="Pages\Homepage.Master" />
+    <Content Include="fonts\fontawesome-social-webfont.eot" />
+    <Content Include="fonts\fontawesome-social-webfont.ttf" />
+    <Content Include="fonts\fontawesome-social-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Pages\Registration.Master" />
+    <Content Include="Pages\Forget_Password.Master" />
+    <Content Include="Pages\Profile.Master" />
+    <Content Include="Pages\Settings.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\1-click.mdf" />
+    <Content Include="App_Data\1-click_log.ldf">
+      <DependentUpon>1-click.mdf</DependentUpon>
+    </Content>
+    <Content Include="Images\amozon.jpg" />
+    <Content Include="Images\biscoot.png" />
+    <Content Include="Images\bookmyshow.png" />
+    <Content Include="Images\ebay_200x200.jpg" />
+    <Content Include="Images\gana.jpg" />
+    <Content Include="Images\jet-airways-squarelogo.png" />
+    <Content Include="Images\jubong.png" />
+    <Content Include="Images\facebook.icon.205x205.jpg" />
+    <Content Include="Images\flickr-logo-27px-r.png" />
+    <Content Include="Images\flipkart.jpg" />
+    <Content Include="Images\g+128.png" />
+    <Content Include="Images\linkedin-icon2.png" />
+    <Content Include="Images\MakeMyTrip--Flights-Hotels-Bus.png" />
+    <Content Include="Images\Myntra-Logo.jpg" />
+    <Content Include="Images\outlook.jpg" />
+    <Content Include="Images\gmail-ios.jpg" />
+    <Content Include="Images\joinform_background.jpg" />
+    <Content Include="Images\pinterest%282%29.jpg" />
+    <Content Include="Images\railway.jpg" />
+    <Content Include="Images\rediff.png" />
+    <Content Include="Images\Saavn-Logo-Icon-Green-500.png" />
+    <Content Include="Images\tumblr-3-512.jpg" />
+    <Content Include="Images\twitter-bird.png" />
+    <Content Include="Images\yahoo.jpg" />
+    <Content Include="Images\yatra.png" />
+    <Content Include="Images\youtube-square.jpg" />
+    <Content Include="Pages\Account.aspx" />
+    <Content Include="Pages\Closed account.aspx" />
+    <Content Include="Pages\entertainment.aspx" />
+    <Content Include="Pages\Forgot_pswd.aspx" />
+    <Content Include="Pages\Joine.aspx" />
+    <Content Include="Pages\login.aspx" />
+    <Content Include="Pages\posthtm.html" />
+    <Content Include="Pages\postses.aspx" />
+    <Content Include="Pages\Resetpsw.aspx" />
+    <Content Include="Pages\shopping.aspx" />
+    <Content Include="Pages\sites.aspx" />
+    <Content Include="Pages\social.aspx" />
+    <Content Include="Pages\socialnetwork.aspx" />
+    <Content Include="Pages\te.aspx" />
+    <Content Include="Pages\test.aspx" />
+    <Content Include="Pages\Travelling.aspx" />
+    <Content Include="Pages\Verification.aspx" />
+    <Content Include="Pages\WebForm1.aspx" />
+    <Content Include="style script\default.css" />
+    <Content Include="style script\fonts.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pages\Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin_detail.aspx.cs">
+      <DependentUpon>Admin_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin_detail.aspx.designer.cs">
+      <DependentUpon>Admin_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin_email.aspx.cs">
+      <DependentUpon>Admin_email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin_email.aspx.designer.cs">
+      <DependentUpon>Admin_email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin_login.aspx.cs">
+      <DependentUpon>Admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin_login.aspx.designer.cs">
+      <DependentUpon>Admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin_logout.aspx.cs">
+      <DependentUpon>Admin_logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin_logout.aspx.designer.cs">
+      <DependentUpon>Admin_logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin_setting.aspx.cs">
+      <DependentUpon>Admin_setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin_setting.aspx.designer.cs">
+      <DependentUpon>Admin_setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Closed account.aspx.cs">
+      <DependentUpon>Closed account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Closed account.aspx.designer.cs">
+      <DependentUpon>Closed account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\contact_us.aspx.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\contact_us.aspx.designer.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\entertainment.aspx.cs">
+      <DependentUpon>entertainment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\entertainment.aspx.designer.cs">
+      <DependentUpon>entertainment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Forget_Password.Master.cs">
+      <DependentUpon>Forget_Password.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Forget_Password.Master.designer.cs">
+      <DependentUpon>Forget_Password.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Forgot_pswd.aspx.cs">
+      <DependentUpon>Forgot_pswd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Forgot_pswd.aspx.designer.cs">
+      <DependentUpon>Forgot_pswd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\get_entertainment.aspx.cs">
+      <DependentUpon>get_entertainment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\get_entertainment.aspx.designer.cs">
+      <DependentUpon>get_entertainment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\get_shopping.aspx.cs">
+      <DependentUpon>get_shopping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\get_shopping.aspx.designer.cs">
+      <DependentUpon>get_shopping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\get_social.aspx.cs">
+      <DependentUpon>get_social.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\get_social.aspx.designer.cs">
+      <DependentUpon>get_social.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\get_socialnetwork.aspx.cs">
+      <DependentUpon>get_socialnetwork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\get_socialnetwork.aspx.designer.cs">
+      <DependentUpon>get_socialnetwork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\get_travelling.aspx.cs">
+      <DependentUpon>get_travelling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\get_travelling.aspx.designer.cs">
+      <DependentUpon>get_travelling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\help.aspx.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\help.aspx.designer.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Homepage.Master.cs">
+      <DependentUpon>Homepage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Homepage.Master.designer.cs">
+      <DependentUpon>Homepage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Joine.aspx.cs">
+      <DependentUpon>Joine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Joine.aspx.designer.cs">
+      <DependentUpon>Joine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\postses.aspx.cs">
+      <DependentUpon>postses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\postses.aspx.designer.cs">
+      <DependentUpon>postses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Profile.Master.cs">
+      <DependentUpon>Profile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Profile.Master.designer.cs">
+      <DependentUpon>Profile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Registration.Master.cs">
+      <DependentUpon>Registration.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Registration.Master.designer.cs">
+      <DependentUpon>Registration.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Resetpsw.aspx.cs">
+      <DependentUpon>Resetpsw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Resetpsw.aspx.designer.cs">
+      <DependentUpon>Resetpsw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings.Master.cs">
+      <DependentUpon>Settings.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Settings.Master.designer.cs">
+      <DependentUpon>Settings.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\set_entertainment.aspx.cs">
+      <DependentUpon>set_entertainment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\set_entertainment.aspx.designer.cs">
+      <DependentUpon>set_entertainment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\set_shopping.aspx.cs">
+      <DependentUpon>set_shopping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\set_shopping.aspx.designer.cs">
+      <DependentUpon>set_shopping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\set_social.aspx.cs">
+      <DependentUpon>set_social.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\set_social.aspx.designer.cs">
+      <DependentUpon>set_social.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\set_socialnetwork.aspx.cs">
+      <DependentUpon>set_socialnetwork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\set_socialnetwork.aspx.designer.cs">
+      <DependentUpon>set_socialnetwork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\set_travelling.aspx.cs">
+      <DependentUpon>set_travelling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\set_travelling.aspx.designer.cs">
+      <DependentUpon>set_travelling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\shopping.aspx.cs">
+      <DependentUpon>shopping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\shopping.aspx.designer.cs">
+      <DependentUpon>shopping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\sites.aspx.cs">
+      <DependentUpon>sites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\sites.aspx.designer.cs">
+      <DependentUpon>sites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\social.aspx.cs">
+      <DependentUpon>social.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\social.aspx.designer.cs">
+      <DependentUpon>social.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\socialnetwork.aspx.cs">
+      <DependentUpon>socialnetwork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\socialnetwork.aspx.designer.cs">
+      <DependentUpon>socialnetwork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\te.aspx.cs">
+      <DependentUpon>te.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\te.aspx.designer.cs">
+      <DependentUpon>te.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Travelling.aspx.cs">
+      <DependentUpon>Travelling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Travelling.aspx.designer.cs">
+      <DependentUpon>Travelling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Verification.aspx.cs">
+      <DependentUpon>Verification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Verification.aspx.designer.cs">
+      <DependentUpon>Verification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51201</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51201/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Homepage.master.cs" Inherits="_1_click.Pages.Homepage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Adequately 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130910
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>1-CLICK</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="../style script/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../style script/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="Home.aspx" accesskey="1" title="">Homepage</a></li>
+				<li><a href="joine.aspx" accesskey="2" title="">Register</a></li>
+				<li><a href="login.aspx" accesskey="3" title="">Login</a></li>
+				<li><a href="help.aspx" accesskey="4" title="">Help</a></li>
+				<li><a href="contact_us.aspx" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+		<div id="logo">
+			<h1><a href="#">1-CLICK</a></h1>
+			<span>Design to remember</span> </div>
+	</div>
+</div>
+<div id="wrapper1">
+	<div id="welcome" class="container">
+		<div class="title">
+			<h2>Welcome to our website</h2>
+        </div>
+		<div class="content">
+			<p>This is 1-Click, a free&nbsp; website in which you can enter your emails and passwords of different website to be&nbsp; rememberred.</p>
+            <p>You can access these saved data throughout the cloud anywhere with 1-click medium. </p>
+            <p>To access the service of it, you can register to out website.</p>
+            <p>&nbsp;</p>
+			<a href="Joine.aspx" class="button">JOIN</a> </div>
+	</div>
+</div>
+<div id="wrapper2">
+	<div id="newsletter" class="container">
+		<div class="title">
+			<h2>1-CLICK</h2>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            <p>In the technological era we addicted to use lots of services online, which makes us to connect with the world virtually.</p>
+            <p>As due to waste spreading of these web-services, the most biggest problem people has to face is rememberring all </p>
+            <p>username and password. Due to which they have to keep on go with forgot password and a single step is manipulated </p>
+            <p>to lot more steps. So, keeping this problem in mind we have tried to develop a site where you can save those multiple</p>
+            <p>websites username and password and access it through out the world on any device with the help of 1-click service which</p>
+            <p>makes to stop the multiple steps to get loggin due to forget of password or username.</p>
+        </div>
+	</div>
+</div>
+<div id="wrapper4">
+	<div id="footer" class="container">
+		<div>
+			<header class="title">
+				<h2>Get in touch</h2>
+				&nbsp;</header>
+			<ul class="contact">
+				<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+				<li><a href="#" class="icon icon-facebook"><span></span></a></li>
+				<li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+				<li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+				<li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="copyright">
+	<p>© All rights reserved. | 1-Click</p>
+</div>
+    </form>
+</body>
+</html>
+

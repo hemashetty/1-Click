@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Settings.master.cs" Inherits="_1_click.Pages.Settings" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>1-CLICK</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .auto-style1 {
+            margin: 0 auto;
+            padding: 0;
+            width: 955px;
+            background: url(../images/content_bg.gif) repeat-y 680px top;
+            height: 582px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="http://kskvku.digitaluniversity.ac/">1-<span> CLICK</span> </a></h1>
+      </div>
+      <div class="searchform">
+      </div>
+      <div class="clr"></div>
+      <div class="menu_nav">
+          
+    <asp:ContentPlaceHolder ID="pay" runat="server"> 
+        <ul>
+            <li class="active"><a href="Profile.aspx"><span>Profile</span></a></li>
+            <li><a href="Payment.aspx"><span>Sites</span></a></li>
+            <li><a href="Histroy.aspx"><span>History</span></a></li>
+            <li><a href="logout.aspx"><span>Settings</span></a></li>
+            <li><a href="logout.aspx"><span>Log out</span></a></li>
+        </ul>
+          </asp:ContentPlaceHolder> 
+       
+
+      </div>
+     
+      </div>
+    </div>
+  </div>
+     
+  <div class="content">
+      
+    <div class="auto-style1">
+           
+      <div class="mainbar">
+          
+        <div class="article">
+        <asp:ContentPlaceHolder ID="try" runat="server"> 
+          <h2>Home</h2>
+           
+            
+                
+          <div class="clr"></div>
+          <div class="clr"></div>
+          </asp:ContentPlaceHolder> 
+        </div>
+                
+      </div>
+        
+       
+      <div class="sidebar">
+        <div class="gadget">
+          <h2 class="star">1-CLICK</h2>
+          <div class="clr"></div>
+            <asp:ContentPlaceHolder ID="set" runat="server">
+                <ul class="sb_menu">
+                    <li><a href="Profile.aspx">Social network</a></li>
+                    <li><a href="Profile.aspx">Entertainment</a></li>
+                    <li><a href="Payment.aspx">Email</a></li>
+                    <li><a href="Histroy.aspx">Travel</a></li>
+                    <li><a href="logout.aspx">Shopping</a></li>
+                </ul>
+                </asp:ContentPlaceHolder>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+     
+  </div>
+       
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c3">
+        <h2><span>Contact</span> Us</h2>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy;&nbsp; All Rights Reservedm>
+          </form>
+</body>
+</html>
